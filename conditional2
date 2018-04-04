@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read a
+read b
+
+if [ $(((a+b)%2)) -eq 0 ]
+then
+echo "even";
+
+else 
+echo "odd";
+fi

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read a
+looper=1
+
+while  [ $looper -le $a ]
+
+do
+echo $looper
+((looper++))
+
+done
