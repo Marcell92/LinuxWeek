@@ -2,9 +2,17 @@
 
 read num
 
-declare -a arrayVar=({1..num})
+arrayVar=()
 
-for i in "${arrayVar[@]}"
+for (( i=1; i <= $num; i++ ))
+
+do
+
+arrayVar+=($i)
+
+done 
+
+for i in ${arrayVar[@]}
 
 do
 

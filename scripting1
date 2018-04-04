@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Enter a username"
+
+read username
+
+sudo useradd -m $username
+
+sudo grep $username /etc/passwd
+
+sudo passwd $username
+
+sudo su $username
+ 
+
