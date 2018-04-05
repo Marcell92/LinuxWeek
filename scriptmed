@@ -1,0 +1,28 @@
+#!/bin/bash
+
+date
+echo "----------"
+who
+echo "----------"
+
+touch logfile.txt
+
+date > logfile.txt
+who > logfile.txt
+
+echo "Do you want to delete the file where the date and logged in users are saved?"
+echo " Yes (y) / No (n)"
+
+read answer
+
+if [ $answer == y ]
+then
+sudo rm logfile.txt
+fi
+
+if [ $answer == n ]
+then
+echo "Okay I keep the file"
+fi
+
+  
